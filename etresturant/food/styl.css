@@ -1,0 +1,189 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f1f5f8;
+  color: #333;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Header */
+header {
+  background: linear-gradient(45deg, #ff6f61, #ff9a8b);
+  color: #fff;
+  text-align: center;
+  padding: 60px 20px;
+  border-bottom: 5px solid #ff9a8b;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+}
+
+header p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* Menu Container */
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 50px 20px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Menu Cards */
+.menu-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #f1f5f8;
+}
+
+.menu-card h2 {
+  color: #ff6f61;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.menu-card p {
+  font-size: 1.1rem;
+  color: #777;
+  line-height: 1.4;
+}
+
+.menu-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background-color: #ff6f61;
+  transform: translateY(12px);
+}
+
+/* Meal Styling */
+.meal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 10px 0;
+}
+
+.meal img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 15px;
+  border: 3px solid #ff6f61;
+}
+
+.meal p {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.meal i {
+  margin-right: 8px;
+  color: #ff6f61;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 40px;
+  background-color: #333;
+  color: #fff;
+  margin-top: 40px;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+footer a {
+  color: #ff9a8b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Button Container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.button {
+  padding: 12px 30px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 5px;
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.2);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background-color: #ff9a8b;
+  box-shadow: 0 8px 16px rgba(0, 123, 255, 0.3);
+}
+
+/* Button Focus */
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.1rem;
+  }
+
+  .menu-container {
+    grid-template-columns: 1fr;
+  }
+
+  .meal img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .button-container {
+    flex-direction: column;
+  }
+}

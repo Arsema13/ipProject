@@ -1,0 +1,152 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff7043;
+  color: #fff;
+  border-bottom: 5px solid #ff5722;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+}
+
+/* Food Gallery */
+.food-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.food-item {
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+.food-item:hover {
+  transform: translateY(-10px);
+}
+
+.food-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.food-item h3 {
+  padding: 15px;
+  background-color: #ffccbc;
+  color: #333;
+  margin: 0;
+}
+
+/* Price Table */
+.price-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow-x: auto;
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.price-table thead {
+  background-color: #ff7043;
+  color: #fff;
+}
+
+.price-table th,
+.price-table td {
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.price-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.price-table tbody tr:hover {
+  background-color: #ffe0b2;
+  transition: background-color 0.3s ease-in-out;
+}
+a {
+  text-decoration: none;
+}
+
+.button {
+  text-decoration: none;
+  background-color: #ff7043;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #e64a19;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .food-item img {
+    height: 150px;
+  }
+
+  .price-table th,
+  .price-table td {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}

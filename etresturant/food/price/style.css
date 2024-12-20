@@ -1,0 +1,107 @@
+/* General Reset */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container for Tables */
+.price-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+/* Table Styling */
+.price-table {
+  width: 45%; /* Adjusted for side-by-side layout */
+  min-width: 300px;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  color: #333; /* Ensures table text is readable */
+}
+
+.price-table th {
+  background-color: rgba(255, 4, 4, 0.952);
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 1.2em;
+}
+
+.price-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.price-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.price-table tbody tr:last-child td {
+  border-bottom: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Back Button */
+.back-btn {
+  margin-top: 20px;
+}
+
+.back-btn .button {
+  text-decoration: none;
+  background-color: rgba(255, 4, 4, 0.952);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+
+.back-btn .button:hover {
+  background-color: #ff6666;
+}
+
+/* Header and Footer */
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1em;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 0.9em;
+  text-align: center;
+}

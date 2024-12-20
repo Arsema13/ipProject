@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location</title>
+    <style>
+      /* Body and general layout styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      h1 {
+        color: #333;
+        font-size: 2.5em;
+        margin-top: 20px;
+      }
+
+      /* Container for the map */
+      .map-container {
+        width: 80%;
+        margin: 30px auto;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Styling the iframe (the map itself) */
+      iframe {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Return to top button */
+      .back-to-menu {
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+      }
+
+      .back-to-top:hover {
+        background-color: #0056b3;
+      }
+
+      /* Make map responsive */
+      @media (max-width: 768px) {
+        iframe {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Location</h1>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1970.9573099867769!2d38.80774682933378!3d8.887530213955696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b83141322b54f%3A0x599e3e3de1e9bc06!2sAASTU%20student%20cafeteria!5e0!3m2!1sen!2set!4v1734642876313!5m2!1sen!2set"
+        width="100%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <a href="food/cafe.html" class="back-to-menu">⬆️ Back to the Menu</a>
+  </body>
+</html>

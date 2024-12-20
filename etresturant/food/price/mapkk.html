@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location</title>
+    <style>
+      /* General Body Styling */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f7f6;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      /* Header Styling */
+      h1 {
+        font-size: 2.5rem;
+        color: #333;
+        margin-top: 20px;
+        text-align: center;
+      }
+
+      /* Map Container Styling */
+      .map-container {
+        border: 8px solid #007bff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+        width: 80%;
+        max-width: 800px;
+      }
+
+      /* Styling for the iframe */
+      iframe {
+        width: 100%;
+        height: 450px;
+        border: none;
+      }
+
+      /* Footer Styling */
+      footer {
+        position: fixed;
+        bottom: 20px;
+        font-size: 14px;
+        color: #555;
+      }
+
+      footer a {
+        color: #007bff;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      footer a:hover {
+        color: #0056b3;
+      }
+
+      /* Add a responsive design for smaller screens */
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .map-container {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Location</h1>
+
+    <!-- Map Container -->
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d353.55395236285256!2d38.80974951813192!3d8.886970748765139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x164b830063d89b25%3A0x2c1a127a1f27b8e1!2sKK%20Yellow%20Lounge!5e0!3m2!1sen!2set!4v1734642579686!5m2!1sen!2set"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2024 University Cafeteria |
+        <a href="/etresturant/food/res.html">Back to Main Menu</a>
+      </p>
+    </footer>
+  </body>
+</html>

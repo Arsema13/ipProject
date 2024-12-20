@@ -1,0 +1,472 @@
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif; /* Apply Poppins font for body */
+  background-color: #f9f9f9;
+  color: #1f0303;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #131111;
+  padding: 20px 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.head {
+  
+  text-align: center;
+  padding: 20px;
+  background-color: #ff7043;
+  color: #fff;
+  border-bottom: 5px solid #ff5722;
+
+}
+
+.header .logo img {
+  height: 60px;
+}
+
+.navlist {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navlist a {
+  display: inline-block;
+
+  text-decoration: none;
+  color: #f8f1f1;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.navlist a:hover {
+  color: #ff5722;
+}
+.nav-content {
+  display: flex;
+  align-items: center;
+}
+.nav-content a {
+  display: inline-block;
+  font-size: 23px;
+  color: #f5f5f5;
+  margin: 0 10px;
+  transition: all 0.6s ease;
+}
+.nav-content a:hover {
+  transform: scale(1.1);
+  color: green;
+}
+#menu-icon {
+  font-size: 32px;
+  z-index: 10001;
+  cursor: pointer;
+  margin-left: 10px;
+  display: none;
+}
+.hero {
+  text-align: center;
+  background: linear-gradient(to bottom, #c8d9e1, #ffffff);
+  padding: 100px 20px;
+  text-align: center;
+  background-image: url("image/stock.jpg"); /* Update with the path to your image */
+  background-size: cover; /* Ensures the image covers the section */
+  background-position: center center; /* Centers the image */
+  background-attachment: fixed; /* Optional: Makes the background image fixed while scrolling */
+  padding: 100px 20px;
+  color: rgb(27, 25, 25); /* Change text color for better contrast */
+}
+
+.hero h1 {
+  font-family: "Lora", serif; /* Apply Lora font for headings */
+  font-size: 3.5em;
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.6em;
+  color: #0f0a0a;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.drinks {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.center-text h2 {
+  font-family: "Lora", serif; /* Apply Lora font for headings */
+  font-size: 2.8em;
+  color: #222;
+  font-weight: bold;
+  text-align: center;
+}
+
+.drinks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.drink-item {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.drink-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.drink-item h4 {
+  margin-top: 15px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.drink-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-box {
+  flex: 1 1 30%;
+  margin: 15px;
+  text-align: left;
+}
+
+.footer-box h3 {
+  font-family: "Lora", serif; /* Apply Lora font for headings */
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ff5722;
+}
+
+.footer-box a {
+  color: #f5f5f5;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.footer-box a:hover {
+  color: #ff5722;
+}
+
+.icons a {
+  color: white;
+  font-size: 2em;
+  margin-right: 15px;
+  transition: color 0.3s;
+}
+
+.icons a:hover {
+  color: #ff5722;
+}
+
+.copyright {
+  text-align: center;
+  padding: 15px;
+  background-color: #111;
+  font-size: 0.9em;
+}
+
+.scroll-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ff5722;
+  color: white;
+  font-size: 1.8em;
+  border-radius: 50%;
+  padding: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #e64a19;
+  transform: translateY(-5px);
+}
+
+/* Price Table */
+.price-container {
+  width: 90%;
+  margin: 50px auto;
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.price-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #444;
+}
+
+
+.price-table th {
+  padding: 20px;
+  background: linear-gradient(45deg, #ff5722, #ff7043);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  border-bottom: 4px solid #e64a19;
+}
+
+.price-table td {
+  padding: 15px;
+  text-align: center;
+  background-color: #fdfdfd;
+  border: 1px solid #eee;
+  font-size: 15px;
+}
+
+.price-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.price-table tr:hover td {
+  background-color: #ffe0b2;
+  color: #d84315;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.price-table td:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.price-table td:last-child {
+  color: #388e3c;
+  font-weight: bold;
+}
+
+/* Back Button Styling */
+.back-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-btn .button {
+  display: inline-block;
+  background-color: #ff5722;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-btn .button:hover {
+  background-color: #e64a19;
+  transform: translateY(-5px);
+}
+@media (max-width: 1070px) {
+  .navlist {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  .bx-menu {
+    display: block;
+  }
+  .navlist {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 350px;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 0px 0px 20px 20px;
+    padding: 10px 0;
+    box-shadow: 0px 20px 20px rgb(15 54 55 / 20%);
+    clip-path: circle(144% at 0% 0%);
+    transition: all 0.55s ease-in-out;
+  }
+  .navlist a {
+    display: block;
+    padding: 0;
+    margin-bottom: 22px;
+    font-size: 22px;
+    font-weight: 600;
+    border-bottom: none;
+  }
+  .navlist a:hover {
+    border-bottom: none;
+  }
+  .navlist.open {
+    right: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+  }
+
+  .hero p {
+    font-size: 1.3em;
+  }
+
+  .drinks-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-box {
+    flex: 1 1 100%;
+    margin: 15px 0;
+  }
+
+  .price-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .price-table th {
+    font-size: 16px;
+  }
+
+  .price-table td {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .drinks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-box {
+    flex: 1 1 100%;
+    margin: 15px 0;
+  }
+
+  .price-table th {
+    font-size: 14px;
+  }
+
+  .price-table td {
+    font-size: 12px;
+  }
+}
+/* Minimize the logo size */
+.footer .logo img {
+  height: 50px; /* Adjust the height of the logo image */
+  width: auto; /* Maintain aspect ratio */
+}
+
+/* Grouping the icons in one line */
+.footer .icons {
+  display: flex;
+  gap: 15px; /* Controls spacing between icons */
+}
+
+.footer .icons a {
+  color: white; /* Icon color */
+  font-size: 1.8em; /* Icon size */
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Icon hover effect */
+.footer .icons a:hover {
+  color: #ff5722; /* Change color on hover */
+}
+
+/* Optional: Adjust the footer layout for better spacing */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px; /* Add space between the footer sections */
+}
+
+.footer-box {
+  flex: 1 1 30%;
+  margin: 15px;
+}
+
+.footer-box h3 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #ff5722;
+}
+
+.footer-box ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+
+.footer-box ul li a {
+  color: #f5f5f5;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-box ul li a:hover {
+  color: #ff5722;
+}
+/* Style for the scroll-to-top button */
+.scroll-btn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #ff5722;
+  color: white;
+  font-size: 2em;
+  padding: 10px;
+  border-radius: 50%;
+  display: none; /* Hidden by default */
+  cursor: pointer;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-btn:hover {
+  background-color: #e64a19; /* Darker shade on hover */
+}

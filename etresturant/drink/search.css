@@ -1,0 +1,49 @@
+/* Style for the search icon */
+#search-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Style for the search bar (always visible) */
+#search-bar {
+    
+    position: absolute;
+    top: 50px;  /* Adjust the position from the top of the page */
+    right: 10px;  /* Adjust the position from the right edge */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 200px;  /* Set a fixed width for the search bar */
+    border-radius: 5px;
+    z-index: 1000;  /* Ensure the search bar appears above other content */
+}
+
+/* Style for the search input field */
+#search-input {
+    width: 100%;  /* Make the input field fill the width of the search bar */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Style for the search results (optional) */
+#search-results {
+    margin-top: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+
+#search-results div {
+    padding: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+#search-results div:hover {
+    background-color: #f7f7f7;
+}
